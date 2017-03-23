@@ -1,4 +1,4 @@
-# zipper hello
+# zipper
 A PHP code for easy get the latest modified files from a directory, and then zip those files in the original directory tree.
 Mainly purpose is to do some 'local version controll'.
 If you develop a website simultaneously runing it live than it will make your job easier.

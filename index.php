@@ -1,6 +1,6 @@
 <head>
-Throw out my mind
-<title>ZFYL - ZIPPER</title>
+
+<title>ZFYL DEVELOPER ZIPPER</title>
 <style>
 .contain {
   display:block;
@@ -43,16 +43,18 @@ textarea.text {
   height:150px;
 }
 
+
 </style>
 </head>
 
 <body>
 
 <form action="zipper.php" method="GET" class="contain">
-
+<b>Time from, to look for changes:</b>
 <input class='text' name='from_date' value='2016-07-29 15:52:00' type="text"/><br/>
+<b>Directories to skip(like cache or session):</b>
 <textarea class='text' class='text' name='skip' placeholder="directory names enclosed with '/' and separated by ';'----leav blank for no skips" type="text"></textarea><br/>
-<b>Something like (/home/zfyl/domains/elszanta.tk/public_html/phpftp):</b><input class='text' name='dir2zip' type="text"/><br/>
+<b>Directory to zip(current dir [<?php echo getcwd(); ?>]):</b><input class='text' value="<?php echo getcwd(); ?>" name='dir2zip' type="text"/><br/>
 <select name="mode" class='select'>
 <option value="default">Do ZIP AND SHOW ZIPPED</option>
 <option value="show-only">JUST SHOW ZIPPABLE FILES LIST</option>
