@@ -1,7 +1,7 @@
 <?php
 
 //Starts Here
-//Put here the directory you want to search for. Put / if you want to search your entire domain
+//Put here the directory you want to search for. Put '/' if you want to search your entire domain
 /*$dir='/home/zfyl/domains/elszanta.tk/public_html/phpftp';
 $matc = preg_match("/.*\/([+\w\-. ]+)\/?/",$dir,$dir_to_start1);
 $dir_to_start = $dir_to_start1[1];*/
