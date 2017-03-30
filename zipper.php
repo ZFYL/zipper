@@ -157,6 +157,9 @@ function zfyl_sbd($address,$comparedate,&$string_to_result,$get_with_dates = fal
       }
 
 }
+
+
+
 function zfyl_zip_from_list($files_list, $dir_input, $skip_pathes = ''){
 
 	$files_to_zip = explode(";",$files_list);
