@@ -2,7 +2,6 @@
 
 <title>ZFYL DEVELOPER ZIPPER</title>
 <style>
-
 .contain {
   display:block;
   background-color:#f0f0f0;
@@ -51,10 +50,12 @@ textarea.text {
 <body>
 
 <form action="zipper.php" method="GET" class="contain">
-<b>Time from, to look for changes:</b>
-<input class='text' name='from_date' value='2016-07-29 15:52:00' type="text"/><br/>
+<b>From Time(default time is current time):</b>
+<input class='text' name='from_date' value='<?php echo date('Y-m-d H:m:s'); ?>' type="text"/><br/>
+<b>Until Time(default time is current time):</b>
+<input class='text' name='until_date' value='<?php echo date('Y-m-d H:m:s'); ?>' type="text"/><br/>
 <b>Directories to skip(like cache or session):</b>
-<textarea class='text' class='text' name='skip' placeholder="directory names enclosed with '/' and separated by ';'----leav blank for no skips" type="text"></textarea><br/>
+<textarea class='text' class='text' name='skip' placeholder="directory names separated by ';'----leave blank for no skips" type="text"></textarea><br/>
 <b>Directory to zip(current dir [<?php echo getcwd(); ?>]):</b><input class='text' value="<?php echo getcwd(); ?>" name='dir2zip' type="text"/><br/>
 <select name="mode" class='select'>
 <option value="default">Do ZIP AND SHOW ZIPPED</option>
