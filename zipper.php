@@ -11,7 +11,7 @@ make it not need to have two // in some cases....
 /*$dir='/home/zfyl/domains/elszanta.tk/public_html/phpftp';
 $matc = preg_match("/.*\/([+\w\-. ]+)\/?/",$dir,$dir_to_start1);
 $dir_to_start = $dir_to_start1[1];*/
-
+//try
 /*
 *This is the "security"
 *basicaly it was needed to make it a bit harder to use for everyone
