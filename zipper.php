@@ -96,13 +96,13 @@ $comparedate=strtotime($comparedatestr);
 // echo "[$skip_pathes_getted]";
 switch($mode){
 	case 'show-only':
-	zfyl_zipper_mode_show_only($dir, $comparedate, $skip_pathes_getted);
+	zfyl_zipper_mode_show_only($dir, $comparedate, $until_date, $skip_pathes_getted);
 	break;
 	case 'default':
-	zfyl_zipper_mode_default($dir, $comparedate, $skip_pathes_getted);
+	zfyl_zipper_mode_default($dir, $comparedate, $until_date, $skip_pathes_getted);
 	break;
 	default:
-	zfyl_zipper_mode_default($dir, $comparedate, $skip_pathes_getted);
+	zfyl_zipper_mode_default($dir, $comparedate, $until_date, $skip_pathes_getted);
 	break;
 }
 
@@ -139,7 +139,7 @@ function zfyl_sbd($address,$comparedate,$until_date,&$string_to_result,$get_with
   //$rest;
         while($entry = readdir($dir)){
                 if(is_dir("$address/$entry") && ($entry != ".." && $entry != ".")){
-                        zfyl_sbd("$address/$entry",$comparedate,$string_to_result,$get_with_dates,$skip_pathes);
+                        zfyl_sbd("$address/$entry",$comparedate,$until_date,$string_to_result,$get_with_dates,$skip_pathes);
                 }
                  else   {
 
